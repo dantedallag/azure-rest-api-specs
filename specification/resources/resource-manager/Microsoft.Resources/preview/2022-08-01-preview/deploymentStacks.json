@@ -1131,9 +1131,11 @@
     },
     "DeploymentStacksError": {
       "type": "object",
-      "properties": {
-        "$ref": "../../../../../common-types/resource-management/v3/types.json#/definitions/ErrorResponse"
-      },
+      "allOf": [
+        {
+          "$ref": "../../../../../common-types/resource-management/v3/types.json#/definitions/ErrorResponse"
+        }
+      ],
       "description": "Deployment Stacks error response."
     },
     "DeploymentStackTemplateDefinition": {
